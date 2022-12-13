@@ -6,6 +6,7 @@
 
 <script>
   import api from './api/index.js'
+  import * as greetings from './api/greetings.js'
 
   export default {
     name: 'App',
@@ -13,6 +14,7 @@
       hello () {
         console.log('App.hello')
         api.greetings.hello()
+        greetings.hi()
       }
     }
   }
