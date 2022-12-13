@@ -13,8 +13,8 @@
     methods: {
       hello () {
         console.log('App.hello')
-        api.greetings.hello()
-        greetings.hi()
+        api.greetings.hello() // <--- this is removed on build. Using yarn dev works
+        greetings.hi() // <--- this is not removed on build
       }
     }
   }
